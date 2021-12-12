@@ -104,3 +104,7 @@ Web Storage
 - [x ] LocalStorage ou SessionStorage
 - [ ] Leitura e escrita de dados simples
 - [  ] Leitura e escrita de JSON
+
+Requisições assíncronas
+
+- [ ] Implementação funcional (basta fazer funcionar uma requisição) em AJAX para uma API de terceiros (ex.: buscaCEP, IBGE) ou para a sua própria API criada com ExpressJS na plataforma Node.
