@@ -4,7 +4,7 @@ AA1: https://drive.google.com/drive/folders/1VOlnt7-GQDn-p8C0Rirv5vC3lo4vHtJm
 <br>
 AA2: https://drive.google.com/file/d/1tfzfpaBrkHgFmAn5dDFHJBs-p-gsNrzY/view?usp=sharing
 <br>
-AA3: link
+AA3:  
 
 
 Caixas de Diálogo
@@ -101,6 +101,6 @@ jQuery
 
 Web Storage
 
-- [ ] LocalStorage ou SessionStorage
+- [x ] LocalStorage ou SessionStorage
 - [ ] Leitura e escrita de dados simples
 - [  ] Leitura e escrita de JSON
