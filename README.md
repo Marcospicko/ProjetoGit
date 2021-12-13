@@ -39,7 +39,7 @@ Eventos
 - [ ] Propagação de eventos no modelo bolha (usar target e currentTarget, ou seja, disparar o evento em um elemento filho e capturar em um elemento pai) 
 
 Acesso aos elementos DOM do HTML
-- [  ]Validação de formulário com onsubmit usando os métodos tradicionais
+- [x]Validação de formulário com onsubmit usando os métodos tradicionais
 - [x] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
 - [x] Via getElementsByName()
@@ -51,7 +51,7 @@ Tratadores de Evento
 - [x] Especificar o tratador de evento inline
 - [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
 - [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
-- [ ] Usar o operador this em funções tratadoras de eventos.
+- [ x] Usar o operador this em funções tratadoras de eventos.
 
 Objetos Nativos
 
@@ -102,8 +102,8 @@ jQuery
 Web Storage
 
 - [x ] LocalStorage ou SessionStorage
-- [ ] Leitura e escrita de dados simples
-- [  ] Leitura e escrita de JSON
+- [x] Leitura e escrita de dados simples
+- [ x ] Leitura e escrita de JSON
 
 Requisições assíncronas
 
