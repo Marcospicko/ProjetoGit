@@ -97,7 +97,7 @@ jQuery
 - [x] Especificar o tratador de algum evento via jQuery
 - [x] Manipulação do CSS via função css() e addClass()/removeClass()
 - [x] Manipulação do conteúdo de um input e div usando jQuery
-- [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
+- [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin) 
 
 Web Storage
 
@@ -105,6 +105,3 @@ Web Storage
 - [x] Leitura e escrita de dados simples
 - [ x ] Leitura e escrita de JSON
 
-Requisições assíncronas
-
-- [ ] Implementação funcional (basta fazer funcionar uma requisição) em AJAX para uma API de terceiros (ex.: buscaCEP, IBGE) ou para a sua própria API criada com ExpressJS na plataforma Node.
