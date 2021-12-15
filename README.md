@@ -78,7 +78,7 @@ Qualidade do código
 
 Formulário
 
-- [ ] Validação de formulário com onsubmit usando os métodos tradicionais
+- [ x] Validação de formulário com onsubmit usando os métodos tradicionais
 - [x] Validação de formulário com HTML5 API
 - [x] Customizar as mensagens nos balões de mensagem
 - [x] Usar os atributos de validação dos inputs
