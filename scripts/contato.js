@@ -1,48 +1,95 @@
-function botaoPesquisar() {
-    let texto = window.document.getElementById('text1');
+function'use strict';
 
-    if (texto.value == 0) {
-        window.alert("[ERROR] você não digitou  nada para fazer a pesquisa !");
-    }
+ function retornos() {
+  const telefone = document.getElementById('telefone');
+  const nome = document.getElementById('nome');
+  const assunto = document.getElementById('assunto');
+  const descricao = document.getElementById('descricao');
+
+  if (telefone.value.length === 0 || assunto.value.length === 0  ||  nome.value.length === 0||  descricao.value.length === 0) {
+    window.alert('Preencha todos os campos   para poder mandar sua mensagem !');
+
+
+  } else if (!(telefone.value.length=== 0 && texto.value.length=== 0 && assunto.value.length=== 0)){
+    window.open('finalizar-contato.html');
+  }
 }
 
-function retorno() {
-    let telefone = document.getElementById('telefone');
-    let texto = document.getElementById('texto');
-    let assunto = document.getElementById('assunto');
 
-    if (telefone.value == 0 || texto.value == 0 || assunto.value == 0) {
-        window.alert("Preencha todos os campos   para poder mandar sua mensagem !")
-    } else if (!(telefone.value == 0 && texto.value == 0 && assunto.value == 0)) {
-        window.open('finalizarContato.html');
-    }
+const pararAlert = setTimeout(function() {
+ alert('você tem 1 minuto para preencher o formulário caso ' +
+       ' contrario sua página será recarregada ');
+      }, 1000);
+
+
+setInterval(function() {
+  clearInterval(pararAlert);
+}, 1000);
+
+const pararContagem = setInterval(function() {
+    window.location.href = 'contatos.html';
+}, 60000);
+
+setInterval(function() {
+ clearInterval(pararContagem);
+
+}, 60000);
+
+//  Evento de mouseover
+function descobertaDeElementos() {
+  const x = document.getElementsByTagName('input');
+  document.getElementById('demo').innerHTML = x.length +
+  ' são eles o campo ASSUNTO, TELEFONE , DESCRIÇÃO , DATA , NOME COMPLETO .';
+
 }
-let pararAlert = setTimeout(function () {
-    alert("você tem 1 minuto para preencher o formulário caso contrario sua página será recarregada...");
-}, 1000);
 
-setInterval(function () {
-    clearInterval(pararAlert);
+$("img").error(function()
+{
+  $(this).hide();
+})
 
+// LocalStorage ou SessionStorage
+function salvarForm(){
+  if (localStorage.contador) {
+     localStorage.contador = Number(localStorage.contador)+1;
+  } else {
+     localStorage.cont = 1;
+  }
+  
+  let  cad = document.getElementById('nome').value+ ','
+   +document.getElementById('assunto').value +','+
+  document.getElementById('telefone').value+ ' ,' + 
+  document.getElementById('descricao').value+ ' ,' +
+  document.getElementById('selecionar-data').value;
+  localStorage.setItem("cad_"+localStorage.cont,cad);
+  localStorage.setItem("cad_Json",JSON.stringify(cad));
+} 
 
-}, 1000);
+  function listarCadastros () {
+    const p=document.getElementById('cadastros');
+    const pJSON=document.getElementById('cadastrosJSON');
+    const dados=localStorage.getItem('cad_1');
+    const dadosJSON = JSON.parse(localStorage.getItem('cad_Json'));
+    p.innerText=dados;
+    pJSON.innerText=dadosJSON;
+    
+  }
 
-let pararContagem = setInterval(function () {
-    window.location.href = "contatos.html";
-}, 60000);
+function conferir(event) {
+  const telefone = document.getElementById('telefone');
+  const nome = document.getElementById('nome');
+  const assunto = document.getElementById('assunto');
+  const descricao = document.getElementById('descricao');
 
-setInterval(function () {
+  if (telefone.value.length === 0 || assunto.value.length === 0  ||  nome.value.length === 0||  descricao.value.length === 0) {
+    event.preventDefault()
+    window.alert('Preencha todos os campos   para poder mandar sua mensagem !');
 
-    clearInterval(pararConatagem);
+  } else if (!(telefone.value.length=== 0 && texto.value.length=== 0 && assunto.value.length=== 0)){
+    window.open('finalizar-contato.html');
+  }
+}
 
-}, 60000);
-
-
- // evento de mouseover////
-
- function descobertaDeElementos(){
-    var x = document.getElementsByTagName("input");
-    document.getElementById("demo").innerHTML = x.length+" são eles o campo ASSUNTO, TELEFONE , DESCRIÇÃO ";
   }
   var inputDoFormulario = document.querySelector('input') ;
   alert(inputDoFormulario.value);
